@@ -1,0 +1,38 @@
+.calculator {
+    display: grid;
+    grid-template-columns: 224px 268px;
+    grid-template-areas: "input operations"
+                         "numbers ."
+                         "result ."
+}
+
+input {
+    height: 19px;
+    margin: 0 8px 8px 0;
+    grid-area: input;
+    cursor: not-allowed;
+}
+
+button {
+    width: 40px;
+    height: 25px;
+    margin-bottom: 4px;
+}
+
+.remove {
+    margin-right: 8px;
+}
+
+.operators {
+    grid-area: operations;
+}
+
+.numbers {
+    grid-area: numbers;
+}
+
+p {
+    grid-area: result;
+    font-family: sans-serif;
+    margin: 6px 0;
+}
